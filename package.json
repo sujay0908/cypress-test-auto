@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cypress": "^15.10.0"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2",
+    "rimraf": "^6.1.2"
+  },
+  "scripts": {
+    "clean": "rimraf cypress/reports",
+    "test": "cypress run",
+    "cy:final": "npm run clean && npm run test"
+  }
+}
